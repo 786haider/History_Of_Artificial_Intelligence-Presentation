@@ -398,7 +398,7 @@ const Presentation = () => {
     }
   ];
 
-  const handleSlideChange = (newSlide, dir) => {
+  const handleSlideChange = (newSlide: number, dir: string) => {
     if (isAnimating || newSlide === currentSlide) return;
     setDirection(dir);
     setIsAnimating(true);
